@@ -18,8 +18,8 @@ echo "_   _                 _
 |  _  |  __/ (_| | |  | |_ / /
 |_| |_|\___|\__,_|_|   \__/___|\n\n";
 echo " Only God Can Stop Me :D \n ";
-echo " $merah GUNAKAN DENGAN BAIK ";
-echo "$biru Sakit Berlanjut Hubungi Dokter  \n";
+echo " $merah JANGAN MARUK ANJG! ";
+echo "$biru Gua Masih Jomblo  \n";
 echo "$hijau Contact Me : \n";
 echo " Instagram : @sued_spalash0819 \n";
 echo " Email : deregen882@gmail.com \n";
