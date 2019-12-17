@@ -6,7 +6,9 @@ $cyan = "\e[96m";
 $magenta = "\e[35m";
 $hijau = "\e[92m";
 $merah = "\e[91m";
+
 echo "$cyan + //////////////////////////////+\n";
+
 echo "$cyan ___           _     _
 |_ _|_ __  ___(_) __| | ___
  | || '_ \/ __| |/ _` |/ _ \
@@ -17,18 +19,21 @@ echo "_   _                 _
 | |_| |/ _ \/ _` | '__| __|_  /
 |  _  |  __/ (_| | |  | |_ / /
 |_| |_|\___|\__,_|_|   \__/___|\n\n";
+
 echo " Only God Can Stop Me :D \n ";
-echo " $merah JANGAN MARUK ANJG! ";
-echo "$biru Gua Masih Jomblo  \n";
+echo " $merah INFO! ";
+echo file_get_contents("https://pastebin.com/raw/k4qabq9K");
+echo " \n";
 echo "$hijau Contact Me : \n";
-echo " Instagram : @sued_spalash0819 \n";
-echo " Email : deregen882@gmail.com \n";
+echo " Facebook : http://fb.me/basmal106 \n";
+echo " Email : Abdulm@merahputih.id \n";
 echo " \n \n";
-echo " ~~~~~~ AUTO VISITOR BLOG 2019 ~~~~~\n  ";
-echo ' Link Website lu: ';
+echo " ~~~~~~ AUTO VISITOR BLOG 2018 ~~~~~\n  ";
+echo ' Website Mu: ';
 $url = trim(fgets(STDIN));
-echo ' Jumlah Visitor yang lu mau: ';
+echo ' Jumlah Visitor: ';
 $max = trim(fgets(STDIN));
+
 error_reporting(0);
 class Random_UA
  {
@@ -166,10 +171,13 @@ class Random_UA
     }
     
 }
+
 class autovisitor extends Random_UA {
+
 	public function __construct($url) {
 		$this->url = $url;
 	}
+
 	private function curl() {
 		$ch = curl_init();
 		CURL_SETOPT($ch, CURLOPT_URL, $this->url);
@@ -182,8 +190,10 @@ class autovisitor extends Random_UA {
 		CURL_SETOPT($ch, CURLOPT_USERAGENT, $this->generate());
 		$result = curl_exec($ch);
 		curl_close($ch);
+
 		return $result;
 	}
+
 	private function xflush() {
     	static $output_handler = null;
     	if ($output_handler === null) {
@@ -200,29 +210,58 @@ class autovisitor extends Random_UA {
         	@ob_start();
     	}
 	}
+
 	private function acakReferer() {
 		$list = array();
 		/* Asal traffic yang di submit */ 
 		$list[] = "http://facebook.com";
-		$list[] = "http://google.com";
+		$list[] = "http://google.com.sg";
 		$list[] = "http://twitter.com";
- 		$list[] = "http://instagram.com";
-       		 $list[] = "http://youtube.com";
+ 		$list[] = "http://facebook.com";
+        $list[] = "http://google.com";
 	    $list[] = "http://twitter.com";
-	    $list[] = "http://google.co.id
+	    $list[] = "http://google.co.id";
 	    $list[] = "http://google.id";
+	    $list[] = "http://google.com";
+	    $list[] = "http://google.co.id";
+	    $list[] = "http://google.id";
+	    $list[] = "http://google.com";
+	    $list[] = "http://google.co.id";
+	    $list[] = "http://google.id";
+	    $list[] = "http://google.com";
+	    $list[] = "http://google.co.id";
+	    $list[] = "http://google.id";
+	    $list[] = "http://google.com";
+	    $list[] = "http://google.co.id";
+	    $list[] = "http://google.id";
+	    $list[] = "http://google.com";
+	    $list[] = "http://google.co.id";
+	    $list[] = "http://google.id";
+	    $list[] = "http://youtube.com";
+	    $list[] = "http://facebook.com";
+	    $list[] = "http://instagram.com";
+	    $list[] = "http://google.com.id";
+	    $list[] = "https://search.yahoo.com";
+        $list[] = "http://google.com";
+
+
 		$acak = array_rand($list,1);
 		return $list[$acak];
 	}
+
 	public function jalankan() {
 		$this->xflush();
+
 		$this->curl();
 		return $this->acakReferer(); 
+
 		$this->xflush();
 	}
+
 } 
+
 for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
-	echo $i.". VISITOR SEDANG BERJALAN KE WEBSITE - [".$class->jalankan()."\n";
+	echo $i.". VISITOR TERKIRIM MELALUI REFERER - [".$class->jalankan()."\n";
 }
 ?>
